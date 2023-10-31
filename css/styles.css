@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bodySnake{
+    background: url(../img/bg.jpg);
+    min-height: 100vh;
+    background-size: 102vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(121, 204, 127),rgb(222, 222, 208));
+    height: 92vmin;
+    width: 90vmin;
+    border: 2px solid rgb(8, 8, 191);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+#scoreBox{
+    position:absolute;
+    /* position: absolute is a CSS (Cascading Style Sheets) 
+    property that allows you to position an HTML element relative to its nearest positioned 
+    ancestor or to the body element if there are no positioned ancestors. */
+    top: 9px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+#HighBox{
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.head{
+    background:linear-gradient(red,black);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+.food{
+background:linear-gradient(red,yellowgreen);
+border: 0.25vmin solid palegoldenrod;
+border-radius: 8px;
+
+}
